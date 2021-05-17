@@ -2,7 +2,7 @@
 
 # Where to put HTML reports that you wan to expose using a web interface
 REPORTS_DIR = notebooks
-SOURCE_DIR = pyproject
+SOURCE_DIR = formation_devops
 SCRIPTS_DIR = scripts
 
 

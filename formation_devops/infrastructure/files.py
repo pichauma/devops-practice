@@ -26,20 +26,20 @@ class FileManager:
     # end ensures 'clean' folder exists
     """
 
-    def __init__(self, root: str) -> None:
+    def __init__(self, root:str) -> None:
         root = os.path.abspath(root)
         if not os.path.exists(root):
             raise ValueError('Provided path {} does not exist.'.format(root))
         self.root = root
 
-    def get_filepath(self, relative_path: str, create_folders: bool = False) -> str:
+    def get_filepath(self,relative_path: str,create_folders:bool =False) -> str:
         """Returns absolute path from relative to ``data/`` folder"""
         path = os.path.abspath(os.path.join(self.root, relative_path))
         if create_folders:
             self.ensure_folder_exists(path)
         return path
 
-    def ensure_folder_exists(self, abspath: str) -> None:
+    def ensure_folder_exists(self, abspath:str) -> None:
         """ creates subfolders if necessary """
         if not os.path.isabs(abspath):
             raise ValueError('path "{}" is not absolute'.format(abspath))
@@ -51,7 +51,7 @@ class FileManager:
         if not os.path.exists(path):
             os.makedirs(path)
 
-    def save(self, thing, relative_path: str, *args, **kwargs) -> None:
+    def save(self,thing,relative_path:str, *args,**kwargs) -> None:
         """Save object (usually dataframe) to file
 
         Additional ``*args`` and ``**kwargs`` are passed to the underlying function.

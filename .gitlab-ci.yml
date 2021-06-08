@@ -1,0 +1,28 @@
+image: python:3
+
+stages:
+    - test
+#    - deploy
+
+
+variables:
+  APP_NAME: "formation_devops"
+
+
+.test:
+  before_script:
+    - make init
+    - source scripts/activate.sh
+    - make install-dev
+    - export FORMATIONDEVOPS_SETTINGS_MODULE=formation_devops.settings.dev
+
+
+run tests:
+  stage: test
+  extends: .test
+  script:
+    - make lint
+    - make coverage
+  coverage: '/TOTAL.+ ([0-9]{1,3}%)/' # This parses the coverage log to display coverage into gitlab
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'

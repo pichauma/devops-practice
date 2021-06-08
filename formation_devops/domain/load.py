@@ -13,8 +13,14 @@ def load_iris(filename: str) -> pd.DataFrame:
     -------
     iris: pd.DataFrame
     """
-    dtype = {'sepal_length': float, 'sepal_width': float, 'petal_length': float, 'petal_width': float, 'species': str, }
-    df = pd.read_csv(filename, sep=",", usecols=dtype.keys(),  dtype=dtype)
+    dtype = {
+        'sepal_length': float,
+        'sepal_width': float,
+        'petal_length': float,
+        'petal_width': float,
+        'species': str,
+    }
+    df = pd.read_csv(filename, sep=",", usecols=dtype.keys(), dtype=dtype)
     return df
 
 

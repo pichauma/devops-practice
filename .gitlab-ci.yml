@@ -2,7 +2,7 @@ image: python:3
 
 stages:
     - test
-#    - deploy
+    - deploy
 
 
 variables:
@@ -27,3 +27,11 @@ run tests:
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+
+deploy prod:
+  stage: deploy
+  script:
+    - echo 'running deploy'
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'

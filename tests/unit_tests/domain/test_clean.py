@@ -27,6 +27,18 @@ def test_clean_data_from_database_with_unittest_patch(query_database):
     pd.testing.assert_frame_equal(result, expected_result)
 
 
+def mocked_query_database():
+    data = pd.DataFrame(
+        [
+            (1.0, 'other_value'),  # first row
+            (np.NaN, 'other_value'),  # second row
+            (2.0, 'other_value'),  # third row
+        ],
+        columns=['first_column', 'other_column'],
+    )
+    return data
+
+
 def test_clean_data_from_database_with_monkepatch(monkeypatch):
     columns = ['first_column']
     monkeypatch.setattr(load, "query_database", mocked_query_database)

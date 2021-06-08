@@ -8,7 +8,9 @@ def upper_cased_header(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def fillna_mean(df: pd.DataFrame, columns: List[str]) -> pd.DataFrame:
+def fillna_mean(
+    df: pd.DataFrame, columns: List[str]
+) -> pd.DataFrame:
     """Fill missing values with mean of a given column.
 
     Parameters

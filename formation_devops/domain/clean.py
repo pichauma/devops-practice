@@ -21,7 +21,12 @@ def clean_iris(iris: pd.DataFrame) -> pd.DataFrame:
         same shape as input. Columns are uppercase, no missing values
     """
     iris = technical_cleaning.upper_cased_header(iris)
-    columns = ['SEPAL_WIDTH', 'SEPAL_LENGTH', 'PETAL_LENGTH', 'PETAL_WIDTH']
+    columns = [
+        'SEPAL_WIDTH',
+        'SEPAL_LENGTH',
+        'PETAL_LENGTH',
+        'PETAL_WIDTH',
+    ]
     iris = technical_cleaning.fillna_mean(iris, columns)
     return iris
 

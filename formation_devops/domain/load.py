@@ -20,7 +20,9 @@ def load_iris(filename: str) -> pd.DataFrame:
         'petal_width': float,
         'species': str,
     }
-    df = pd.read_csv(filename, sep=",", usecols=dtype.keys(), dtype=dtype)
+    df = pd.read_csv(
+        filename, sep=",", usecols=dtype.keys(), dtype=dtype
+    )
     return df
 
 

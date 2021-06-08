@@ -24,7 +24,6 @@ from formation_devops.settings import DATA_DIR  # type: ignore
 files = FileManager(DATA_DIR)
 
 
-
 def run():
     logging.info('Running main application script')
     do_cleaning()
@@ -33,8 +32,7 @@ def run():
 
 def do_cleaning():
     logging.debug('Doing cleaning')
-    raw_filepath = files.get_filepath(
-        'raw/iris.csv')
+    raw_filepath = files.get_filepath('raw/iris.csv')
     iris = load.load_iris(raw_filepath)
     iris = clean.clean_iris(iris)
     files.save(iris, 'clean/iris.pickle')

@@ -26,7 +26,6 @@ def clean_iris(iris: pd.DataFrame) -> pd.DataFrame:
     return iris
 
 
-
 def clean_data_from_database(columns: List[str]) -> pd.DataFrame:
     """clean data from a database.
 

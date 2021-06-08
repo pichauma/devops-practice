@@ -29,9 +29,15 @@ sys.path.insert(0, os.path.abspath('../..'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode', 'sphinx.ext.napoleon']
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.napoleon',
+]
 
-add_module_names = False  # noms plus courts pour les classes / fonctions
+add_module_names = (
+    False  # noms plus courts pour les classes / fonctions
+)
 autodoc_default_flags = [
     'members',
     'private-members',  # pour voir les méthodes privées des modules
@@ -228,7 +234,13 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'formation_devops.tex', 'formation_devops Documentation', 'Quantmetry', 'manual'),
+    (
+        master_doc,
+        'formation_devops.tex',
+        'formation_devops Documentation',
+        'Quantmetry',
+        'manual',
+    ),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -256,7 +268,15 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(master_doc, 'formation_devops', 'formation_devops Documentation', [author], 1)]
+man_pages = [
+    (
+        master_doc,
+        'formation_devops',
+        'formation_devops Documentation',
+        [author],
+        1,
+    )
+]
 
 # If true, show URL addresses after external links.
 # man_show_urls = False

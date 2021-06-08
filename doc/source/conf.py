@@ -35,9 +35,7 @@ extensions = [
     'sphinx.ext.napoleon',
 ]
 
-add_module_names = (
-    False  # noms plus courts pour les classes / fonctions
-)
+add_module_names = False  # noms plus courts pour les classes / fonctions
 autodoc_default_flags = [
     'members',
     'private-members',  # pour voir les méthodes privées des modules

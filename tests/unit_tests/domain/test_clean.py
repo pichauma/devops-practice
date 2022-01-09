@@ -12,7 +12,7 @@ def test_clean_iris():
             (1, 1, np.nan, 1, 'test'),
             (1, 1, 1, np.nan, 'test'),
         ],
-        columns=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'other'],
+        columns=['sepal_length', 'sepal_width', 'petal_length', 'petal_width'],
     )
     result = clean.clean_iris(iris)
     expected_result = pd.DataFrame(

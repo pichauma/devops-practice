@@ -3,4 +3,4 @@ def greet_with_name(name):
 
 
 def test_greet_with_name():
-    assert greet_with_name("Gil") == "Hello everyone, it's Gil"
+    assert greet_with_name("Gil LAMPE") == "Hello everyone, it's Gil LAMPE"

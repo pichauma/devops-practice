@@ -94,7 +94,5 @@ class FileManager:
         elif extension == ".csv":
             return pd.read_csv(path, *args, **kwargs)
         else:
-            logging.error(
-                'Impossible to load from {}. Unkown extention : {}'.format(path, extension)
-            )
+            logging.error('Impossible to load from {}. Unkown extention : {}'.format(path, extension))
             raise NotImplementedError('Extension {} not handled by files.load()'.format(extension))

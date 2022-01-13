@@ -28,8 +28,8 @@ jobs:
 
       - name: Print hello world
         run: |
-        echo "Hello, world!"
-        echo "How are you?"
+        echo Hello, world!
+        echo How are you?
         pwd
 
   build:

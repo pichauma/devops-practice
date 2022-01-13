@@ -1,0 +1,8 @@
+formation\_devops.settings.test module
+======================================
+
+.. automodule:: formation_devops.settings.test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:

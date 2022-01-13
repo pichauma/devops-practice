@@ -1,0 +1,20 @@
+formation\_devops.infrastructure package
+========================================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   formation_devops.infrastructure.files
+   formation_devops.infrastructure.technical_cleaning
+
+Module contents
+---------------
+
+.. automodule:: formation_devops.infrastructure
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:

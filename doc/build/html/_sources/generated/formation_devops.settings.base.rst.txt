@@ -1,0 +1,8 @@
+formation\_devops.settings.base module
+======================================
+
+.. automodule:: formation_devops.settings.base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:

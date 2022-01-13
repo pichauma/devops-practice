@@ -1,0 +1,8 @@
+formation\_devops.domain.clean module
+=====================================
+
+.. automodule:: formation_devops.domain.clean
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:

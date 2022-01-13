@@ -1,0 +1,20 @@
+formation\_devops.domain package
+================================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   formation_devops.domain.clean
+   formation_devops.domain.load
+
+Module contents
+---------------
+
+.. automodule:: formation_devops.domain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:

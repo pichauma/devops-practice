@@ -1,0 +1,8 @@
+formation\_devops.infrastructure.files module
+=============================================
+
+.. automodule:: formation_devops.infrastructure.files
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:

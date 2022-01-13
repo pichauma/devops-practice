@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>formation_devops.infrastructure.files module &mdash; formation_devops 0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="formation_devops.infrastructure.technical_cleaning module" href="formation_devops.infrastructure.technical_cleaning.html" />
+    <link rel="prev" title="formation_devops.infrastructure package" href="formation_devops.infrastructure.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> formation_devops
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="formation_devops.html">formation_devops package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="formation_devops.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="formation_devops.application.html">formation_devops.application package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="formation_devops.domain.html">formation_devops.domain package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="formation_devops.infrastructure.html">formation_devops.infrastructure package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="formation_devops.infrastructure.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="formation_devops.infrastructure.html#module-formation_devops.infrastructure">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="formation_devops.interface.html">formation_devops.interface package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="formation_devops.settings.html">formation_devops.settings package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="formation_devops.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formation_devops.html#module-formation_devops">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">formation_devops</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="formation_devops.html">formation_devops package</a> &raquo;</li>
+          <li><a href="formation_devops.infrastructure.html">formation_devops.infrastructure package</a> &raquo;</li>
+      <li>formation_devops.infrastructure.files module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/formation_devops.infrastructure.files.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-formation_devops.infrastructure.files">
+<span id="formation-devops-infrastructure-files-module"></span><h1>formation_devops.infrastructure.files module<a class="headerlink" href="#module-formation_devops.infrastructure.files" title="Permalink to this headline"></a></h1>
+<p>This module provides convenient function to load and save from the
+application’s <cite>data/</cite> folder (as defined in the config).</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="formation_devops.infrastructure.files.FileManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FileManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/formation_devops/infrastructure/files.html#FileManager"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#formation_devops.infrastructure.files.FileManager" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Utility class to handle data files contained in a root folder</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>root</strong> (<em>str</em>) – absolute path to the root data folder</p>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">files</span> <span class="o">=</span> <span class="n">FileManager</span><span class="p">(</span><span class="s1">&#39;/path/to/data/&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">files</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;raw/iris.csv&#39;</span><span class="p">)</span>
+<span class="go"># Loads dataframe from /path/to/data/raw/iris.csv</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">files</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s1">&#39;clean/iris.pickle&#39;</span><span class="p">)</span>
+<span class="go"># saves to /path/to/data/clean/iris.pickle</span>
+<span class="go"># end ensures &#39;clean&#39; folder exists</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="formation_devops.infrastructure.files.FileManager.get_filepath">
+<span class="sig-name descname"><span class="pre">get_filepath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">relative_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create_folders</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="../_modules/formation_devops/infrastructure/files.html#FileManager.get_filepath"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#formation_devops.infrastructure.files.FileManager.get_filepath" title="Permalink to this definition"></a></dt>
+<dd><p>Returns absolute path from relative to <code class="docutils literal notranslate"><span class="pre">data/</span></code> folder</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="formation_devops.infrastructure.files.FileManager.ensure_folder_exists">
+<span class="sig-name descname"><span class="pre">ensure_folder_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">abspath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="../_modules/formation_devops/infrastructure/files.html#FileManager.ensure_folder_exists"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#formation_devops.infrastructure.files.FileManager.ensure_folder_exists" title="Permalink to this definition"></a></dt>
+<dd><p>creates subfolders if necessary</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="formation_devops.infrastructure.files.FileManager.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thing</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="../_modules/formation_devops/infrastructure/files.html#FileManager.save"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#formation_devops.infrastructure.files.FileManager.save" title="Permalink to this definition"></a></dt>
+<dd><p>Save object (usually dataframe) to file</p>
+<p>Additional <code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> are passed to the underlying function.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">files</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s1">&#39;clean/iris.pickle&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="formation_devops.infrastructure.files.FileManager.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">relative_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">pandas.core.frame.DataFrame</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/formation_devops/infrastructure/files.html#FileManager.load"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#formation_devops.infrastructure.files.FileManager.load" title="Permalink to this definition"></a></dt>
+<dd><p>Loads .pickle and .csv from file relative to  <code class="docutils literal notranslate"><span class="pre">data/</span></code> folder</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>relative_path</strong> (<em>str</em>) – path relative to the application <code class="docutils literal notranslate"><span class="pre">data/</span></code> folder</p></li>
+<li><p><strong>args</strong> – those are passed to the inner load functionxz</p></li>
+<li><p><strong>kwargs</strong> – those are passed to the inner load function</p></li>
+</ul>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># this loads the file /path/to/data/raw/iris.csv</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">files</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;raw/iris.csv&#39;</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;str&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="formation_devops.infrastructure.html" class="btn btn-neutral float-left" title="formation_devops.infrastructure package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="formation_devops.infrastructure.technical_cleaning.html" class="btn btn-neutral float-right" title="formation_devops.infrastructure.technical_cleaning module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Quantmetry.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

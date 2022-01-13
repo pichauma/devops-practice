@@ -1,0 +1,8 @@
+formation\_devops.application.main module
+=========================================
+
+.. automodule:: formation_devops.application.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:

@@ -1,0 +1,19 @@
+formation\_devops.application package
+=====================================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   formation_devops.application.main
+
+Module contents
+---------------
+
+.. automodule:: formation_devops.application
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:

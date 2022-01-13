@@ -1,0 +1,8 @@
+formation\_devops.infrastructure.technical\_cleaning module
+===========================================================
+
+.. automodule:: formation_devops.infrastructure.technical_cleaning
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:

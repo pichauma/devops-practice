@@ -1,5 +1,4 @@
 # Import Standard Libraries
-import pandas as pd
 import numpy as np
 
 # Import ML Libaries
@@ -34,8 +33,6 @@ class LinearIris:
 
     def split_model(self, iris_df):
         # Variables
-        X = iris_df.drop(labels='SEPAL_LENGTH', axis=1)
-        y = iris_df['SEPAL_LENGTH']
 
         # Splitting the Dataset
         # TODO: Set the values self.X_train, self.X_test, self.y_train, self.y_test using the train_test_split function

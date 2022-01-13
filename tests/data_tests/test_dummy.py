@@ -18,5 +18,3 @@ def cleandir():
 def test():
     print("use fixtures")
     assert True
-
-

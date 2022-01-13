@@ -53,3 +53,6 @@ jobs:
 
       - name: Run lint
         run: make lint
+
+      - name: run some unit tests
+        run: pytest
